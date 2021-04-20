@@ -26,6 +26,7 @@ defmodule InmanaWeb do
       alias InmanaWeb.Router.Helpers, as: Routes
 
       action_fallback InmanaWeb.FallbackController
+      import Inmana
     end
   end
 
