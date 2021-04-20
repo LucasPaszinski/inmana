@@ -24,6 +24,8 @@ defmodule InmanaWeb do
       import Plug.Conn
       import InmanaWeb.Gettext
       alias InmanaWeb.Router.Helpers, as: Routes
+
+      action_fallback InmanaWeb.FallbackController
     end
   end
 
