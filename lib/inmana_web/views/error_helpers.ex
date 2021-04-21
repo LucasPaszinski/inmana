@@ -3,14 +3,6 @@ defmodule InmanaWeb.ErrorHelpers do
   Conveniences for translating and building error messages.
   """
 
-  def changeset_errors(changeset) do
-    Ecto.Changeset.traverse_errors(changeset, fn {msg, opts} ->
-      Enum.reduce(opts, msg, fn {key, value}, acc ->
-        String.replace(acc, "%{#{key}}", to_string(value))
-      end)
-    end)
-  end
-
   @doc """
   Translates an error message using gettext.
   """

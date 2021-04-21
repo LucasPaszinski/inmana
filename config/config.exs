@@ -26,6 +26,8 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :inmana, Inmana.Mailer, adapter: Bamboo.LocalAdapter
+
 # Ecto uses UUID
 config :inmana, Inmana.Repo,
   migration_primary_key: [type: :binary_id],
