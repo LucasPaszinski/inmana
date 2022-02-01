@@ -1,19 +1,9 @@
 # Inmana
 
-To start your Phoenix server:
+Aplicação deve ter 
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+Uma rota para a criação de um restaurante, que deve ter `nome` e `email`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Uma outra rota deve ser capaz de criar um `suprimento`, o suprimento deve ter `description`, `expiration_date` e `responsible` e deve estar associado a um restaurante 
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Ela deve ter estar disponível por meio de uma API REST (json)  e por meio de um interface web (LiveView) (nao implementada).
